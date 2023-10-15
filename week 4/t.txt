@@ -1,0 +1,20 @@
+Topological Sorting  is an algorithm that orders a directed acyclic graph in a way such that 
+each node appears before all the nodes it points to in the returned order.if we have a --> b, a must appear before b in the topological order.
+Its main usage is to detect cycles in directed graphs since no topological order is possible for a graph that contains a cycle. 
+
+
+    1 (Task A) → 2 (Task B) → 4 (Task D) → 5 (Task E)
+          ↘   ↓
+           3 (Task C)
+
+To obtain a topological sort of this graph, we can start by picking any vertex with no incoming edges as the starting point. In this case, Task A (vertex 1) has no dependencies, so we can start with it.
+
+The topological sort of the given graph would be:
+
+Task A
+Task B
+Task C
+Task D
+Task E
+This ordering indicates that Task A should be completed first, 
+followed by Task B, then Task C, Task D, and finally Task E, respecting the dependencies between the tasks.

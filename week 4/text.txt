@@ -1,0 +1,33 @@
+1 2 2
+1 3 1
+1 10 5
+1 9 18
+2 3 7
+2 9 6
+2 5 20
+2 6 13
+2 8 15
+3 5 9
+5 7 5
+6 7 1
+6 8 21
+8 9 7
+9 10 6
+
+
+1.Create a graph representation with the given edges and  weights.we will use a adjacent list.the first two numbers describe
+two nodes and third number is weight between them.
+
+2.Initialize the distance values for all nodes. Set the distance of the source node to 0 and all other nodes to infinity.
+
+3.Create a priority queue (min-heap) to store nodes.. push the source node with a distance of 0.
+Repeat the following steps until the priority queue is empty.
+
+pop the node with the smallest distance from the priority queue. Let's call this node "current".
+For each neighbor of the current node:
+Calculate the total distance from the source node to the neighbor by adding the weight of the edge between the current node and the neighbor to the current node's distance.
+If the total distance is smaller than the current distance of the neighbor, update the neighbor's distance with the tentative distance and enqueue the neighbor into the priority queue.
+After processing all nodes, the distance values will represent the shortest distance from the source node to each node in the graph.
+
+
+
